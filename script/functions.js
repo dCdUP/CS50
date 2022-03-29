@@ -9,6 +9,7 @@ const logging = () => {
 
     console.log(powerTwo())
     console.log(powerTen())
+    1
 
 }
 
