@@ -4,10 +4,22 @@
         <title>Hello World</title>
     </head>
     <body>
-        Hello World
-        <script type="text/javascript" src="./script/functions.js"></script>
-        <input type="text" id="zahl" placeholder="Zahleingeben"/>
-        <p id="update">Filler</p>
+        <select name="powerTwoInput" id="powerTwoList">
+            <option value="kibibyte">Kibibyte</option>
+            <option value="mebibyte">Mebibyte</option>
+            <option value="gibibyte">Gibibyte</option>
+            <option value="tebibyte">Tebibyte</option>
+        </select>
+        <input type="number" id="powerTwoInput" placeholder="Zahleingebe 1"/>
+        <select name="powerTenInput" id="powerTenList">
+            <option value="kilobyte">Kilobyte</option>
+            <option value="megabyte">Megabyte</option>
+            <option value="gigabyte">Gigabyte</option>
+            <option value="terrabyte">Terrabyte</option>
+        </select>
+        <input type="text" id="powerTenInput" placeholder="Zahleingebe 2" />
         <button id="knopf">Click pls</button>
+        <div id="result">aaaaaaaaaaaa</div>
     </body>
+    <script src="script/functions.js"></script>
 </html>
