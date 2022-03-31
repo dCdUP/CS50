@@ -40,16 +40,14 @@ const IECtoTenFunction = () =>
 {
     console.log("IECtoTenFunction");
     let powerTwoInput = parseInt(document.getElementById("powerTwoInput").value);
-    console.log(powerTwoInput)
     let result = 0;
-    if (powerTwoInput == NaN){
-        result = (powerTwoInput*Math.pow(2,powerTwo()))/Math.pow(10,powerTen())
-        console.log(result, "Ausgefuehrt")
-    }
-    else
+    result = (powerTwoInput*Math.pow(2,powerTwo()))/Math.pow(10,powerTen());
+    document.getElementById("result").innerHTML = result;
+    if  (!isNaN(result))
     {
-        alert("Error")
+        console.log(result)
     };
+    // do the shit lol
 }
 
 const TentoIECFunction = () =>
